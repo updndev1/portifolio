@@ -101,19 +101,28 @@ section {
 }
 
 section:nth-of-type(1) {
-  background-color: #a0a0fd;
+  background-color: #c4d2ca;
 }
 
 section:nth-of-type(2) {
-  background-color: #b3fdd2;
+  background-color: #c4d2ca;
 }
 
 section:nth-of-type(3) {
-  background-color: #f5f0ff;
+  background-color: #c4d2ca;
 }
 
 section:nth-of-type(4) {
-  background-color: #fff7e8;
+  background-color: #c4d2ca;
+}
+section:nth-of-type(5) {
+  background-color: #c4d2ca;
+}
+section:nth-of-type(6) {
+  background-color: #c4d2ca;
+}
+section:nth-of-type(7) {
+  background-color: #c4d2ca;
 }
 
 section h3 {
@@ -150,7 +159,7 @@ footer {
 
 /* Hero Section com Foto de Perfil */
 .hero {
-  background: linear-gradient(135deg, #a0a0fd 0%, #8080ff 100%) !important;
+  background: linear-gradient(135deg, #bcd0f4 0%, #b1cbfa 100%) !important;
 }
 
 .hero-content {
