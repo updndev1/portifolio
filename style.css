@@ -1,3 +1,11 @@
+:root {
+  --navy-dark: #011f4b;
+  --navy: #03396c;
+  --blue: #005b96;
+  --blue-muted: #6497b1;
+  --blue-light: #b3cde0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +22,8 @@ html {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #040404;
+  color: var(--navy-dark);
+  background-color: var(--navy-dark);
 }
 
 header {
@@ -30,7 +38,8 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: #507fff;
+  color: white;
+  background-color: var(--navy-dark);
   padding: 18px 20px;
   text-align: left;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -54,7 +63,7 @@ nav {
 }
 
 nav a {
-  background-color: #007bff;
+  background-color: var(--blue);
   color: white;
   padding: 8px 12px;
   text-decoration: none;
@@ -64,7 +73,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #0056b3;
+  background-color: var(--blue-muted);
 }
 
 .hamburger {
@@ -98,37 +107,13 @@ section {
   padding: 22px 24px;
   border-radius: 18px;
   scroll-margin-top: 80px;
-}
-
-section:nth-of-type(1) {
-  background-color: #c4d2ca;
-}
-
-section:nth-of-type(2) {
-  background-color: #c4d2ca;
-}
-
-section:nth-of-type(3) {
-  background-color: #c4d2ca;
-}
-
-section:nth-of-type(4) {
-  background-color: #c4d2ca;
-}
-section:nth-of-type(5) {
-  background-color: #c4d2ca;
-}
-section:nth-of-type(6) {
-  background-color: #c4d2ca;
-}
-section:nth-of-type(7) {
-  background-color: #c4d2ca;
+  background-color: var(--blue-light);
 }
 
 section h3 {
   font-size: 1.4rem;
   margin: 20px 0 10px;
-  color: #007bff;
+  color: var(--blue);
 }
 
 section p {
@@ -146,12 +131,12 @@ section li {
 }
 
 footer {
-  background-color: #f0f0f0;
+  background-color: var(--navy);
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  border-top: 1px solid #ddd;
-  color: #666;
+  border-top: 1px solid var(--blue-muted);
+  color: white;
   font-size: 0.9rem;
 }
 
@@ -159,7 +144,7 @@ footer {
 
 /* Hero Section com Foto de Perfil */
 .hero {
-  background: linear-gradient(135deg, #bcd0f4 0%, #b1cbfa 100%) !important;
+  background: linear-gradient(135deg, var(--blue-muted), var(--navy)) !important;
 }
 
 .hero-content {
@@ -176,7 +161,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid var(--blue-light);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -254,7 +239,7 @@ footer {
 .skill-card h4 {
   margin: 0;
   font-size: 1rem;
-  color: #333;
+  color: var(--navy-dark);
 }
 
 /* Galeria de Certificados */
@@ -275,11 +260,11 @@ footer {
 }
 
 .certificate-card img {
-  width: 200px;
-  height: 280px;
+  width: 280px;
+  height: 180px;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
@@ -291,7 +276,7 @@ footer {
 .certificate-card p {
   margin: 8px 0 0 0;
   font-weight: 500;
-  color: #333;
+  color: var(--navy-dark);
   text-align: center;
 }
 
@@ -323,7 +308,7 @@ footer {
 }
 
 .contact-item a {
-  color: #007bff;
+  color: var(--blue);
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -331,7 +316,7 @@ footer {
 }
 
 .contact-item a:hover {
-  color: #0056b3;
+  color: var(--navy);
   text-decoration: underline;
 }
 
@@ -414,7 +399,7 @@ footer {
 
   .certificate-card img {
     width: 150px;
-    height: 210px;
+    height: 100px;
   }
 
   .contact-item {
@@ -457,7 +442,7 @@ footer {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #507fff;
+    background-color: var(--navy-dark);
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -531,8 +516,8 @@ footer {
 
   .certificate-card img {
     width: 100%;
-    height: auto;
-    max-width: 200px;
+    height: 180px;
+    max-width: 280px;
   }
 
   .contact-item {
